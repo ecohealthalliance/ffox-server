@@ -1,8 +1,7 @@
 image: docker:stable
+service:
+  - docker:dind
 
-variables:
-  DOCKER_HOST: tcp://docker:2375/
-  DOCKER_DRIVER: overlay2
 
 stages:
   - build
