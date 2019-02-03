@@ -2,6 +2,9 @@ image: docker:stable
 services:
   - docker:dind
 
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+
 stages:
   - build
   - deploy
