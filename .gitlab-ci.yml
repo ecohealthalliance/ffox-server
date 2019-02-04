@@ -5,6 +5,8 @@ services:
 stages:
   - build
 
+# test mirroring
+
 build_containder:
   stage: build
   script:
